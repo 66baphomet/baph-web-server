@@ -1,3 +1,4 @@
+//git push
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
@@ -23,7 +24,9 @@ app.get('', (req, res)=>{
 })
 
 app.get('/about', (req, res)=>{
-    res.render('about')
+    res.render('about',{
+        name: 'Dipto'
+    })
 })
 
 app.get('/help', (req, res)=>{
