@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
-
+//for git pull
 //defining the public, views and partials path
 
 const publicDirectory = path.join(__dirname, '../public')
