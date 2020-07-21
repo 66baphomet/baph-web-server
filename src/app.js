@@ -1,4 +1,4 @@
-//git push
+//git push by asus
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
@@ -31,6 +31,10 @@ app.get('/about', (req, res)=>{
 
 app.get('/help', (req, res)=>{
     res.render('help')
+})
+
+app.get('*',(req, res)=>{
+    res.send('Error 404')
 })
 
 app.listen(3000, ()=>{
